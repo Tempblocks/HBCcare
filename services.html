@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- styling -->
+    <link href="style.css" rel="stylesheet">
+    <!-- navbar styling -->
+    <link href="navbar.css" rel="stylesheet">
+    <!-- services styling -->
+    <link href="services.css" rel="stylesheet">
+    <!-- footer styling -->
+    <link href="footer.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>services</title>
+</head>
+
+<body>
+    <!--top navigation bar-->
+    <!--top navigation bar-->
+    <nav class="topNav">
+    <div class="main">
+    <div class="left" >
+    <div class="btn_one" onclick="toggle()">
+    <img src="menu.png">
+    </div>
+    <span class="logo">
+    <img src="logo.png" >
+    </span>
+    </div>
+    
+    <span class="signUp" ><a href="register.html" >Register / Login</a></span>
+    </div>
+    </nav>
+    
+    <div id="bg" ></div>
+    
+    <div class="sidebar_menu" id="sideMenu" >
+    <div class="logo">
+    <a href="#!"><img src="logo.png"></a>
+    </div>
+    <div class="btn_two">
+    <div class="close"  style="color:#000;">
+    <img src="close.png"  onclick="toggle()">
+    </div>
+    </div>
+    <div class="menu">
+    <ul>
+    <li>
+    <a href="index.html">
+    <i class="fas fa-qrcode"></i>
+    <span>Home</span>
+    </a>
+    </li>
+    <li>
+    <a href="services.html" class="active" >
+    <i class="fas fa-link"></i>
+    <span href="#">All Tests</span>
+    </a>
+    </li>
+    <li>
+    <a href="bookForm.html">
+    <i class="fas fa-stream"></i>
+    <span>Book Test</span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <i class="fas fa-calendar-week"></i>
+    <span>Your Booking</span>
+    </a>
+    </li>
+    </ul>
+    </div>
+    
+    <div class="profile-details">
+    <div class="profile-content">
+    <img src="user.png" alt="profileImg">
+    </div>
+    <div class="name-job">
+    <div class="profile_name">Welcome Guest</div>
+    <div class="job"></div>
+    </div>
+    <i class='bx bx-log-out' ></i>
+    
+    </div>
+    </div>
+    
+    
+    
+    <div class="note scrolling" >
+    <p>We provide Free Home Blood Collection</p>
+    </div>
+    
+    <div class="conInfo" >
+    <a href="https://wa.me/917738963715" class="conBtn" >
+    <span class="icon" style="background:#31d24e;" ><i class="fa-brands fa-whatsapp"></i></span>
+    </a>
+    <a href="tel:7738963715" class="conBtn"   >
+    <span class="icon" style="background:#4286f5;"><i class="fa-solid fa-phone"></i></span>
+    </a>
+    </div>
+    
+    <div class="bottomBtn" >
+    <a href="#!" >
+    <h2>Book Your Appointment</h2>
+    </a>
+    </div>
+    
+
+
+
+    <section class="services container">
+        <div class="search">
+            <div class="searchbar">
+                <input type="text" class="searchbar__input" name="q" placeholder="Search Test" id="search">
+                <a href="#table" id="searchBtn" class="searchbar__button">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <div class="main showServices showS" id="services" >
+            <div class="box">
+            <h3>blood test </h3>
+            <div class="pre_info">
+            <p><b>Pre Test Information :</b></p>
+            <span>No special preparation is required</span>
+            </div>
+            <div class="repo_delevery">
+            <p><b>Report Delevry :</b></p>
+            <span>42 hours</span>
+            </div>
+            <div class="price" >
+            <h5 class="current" ><i class="fa-solid fa-indian-rupee-sign"></i> 299</h5>
+            <h5 class="before" ><i class="fa-solid fa-indian-rupee-sign"></i> 400</h5>
+            </div>
+            <div class="buttons">
+            <a href="#!" class="button" data-toggle="modal" data-target="#exampleModalCenter">View Details</a>
+            <a href="#!" class="button" >Book now</a>
+            </div>
+            <p class="info"><i class='bx bx-home-alt'></i> Home Collection Available</p>
+            </div>
+            
+            <div class="box">
+            <h3>blood test </h3>
+            <div class="pre_info">
+            <p><b>Pre Test Information :</b></p>
+            <span>No special preparation is required</span>
+            </div>
+            <div class="repo_delevery">
+            <p><b>Report Delevry :</b></p>
+            <span>42 hours</span>
+            </div>
+            <div class="price" >
+            <h5 class="current" ><i class="fa-solid fa-indian-rupee-sign"></i> 299</h5>
+            <h5 class="before" ><i class="fa-solid fa-indian-rupee-sign"></i> 400</h5>
+            </div>
+            <div class="buttons">
+            <a href="#!" class="button" data-toggle="modal" data-target="#exampleModalCenter">View Details</a>
+            <a href="#!" class="button" >Book now</a>
+            </div>
+            <p class="info"><i class='bx bx-home-alt'></i> Home Collection Available</p>
+            </div>
+            
+            <div class="box">
+            <h3>blood test </h3>
+            <div class="pre_info">
+            <p><b>Pre Test Information :</b></p>
+            <span>No special preparation is required</span>
+            </div>
+            <div class="repo_delevery">
+            <p><b>Report Delevry :</b></p>
+            <span>42 hours</span>
+            </div>
+            <div class="price" >
+            <h5 class="current" ><i class="fa-solid fa-indian-rupee-sign"></i> 299</h5>
+            <h5 class="before" ><i class="fa-solid fa-indian-rupee-sign"></i> 400</h5>
+            </div>
+            <div class="buttons">
+            <a href="#!" class="button" data-toggle="modal" data-target="#exampleModalCenter">View Details</a>
+            <a href="#!" class="button" >Book now</a>
+            </div>
+            <p class="info"><i class='bx bx-home-alt'></i> Home Collection Available</p>
+            </div>
+
+            <div class="box">
+                <h3>blood test </h3>
+                <div class="pre_info">
+                    <p><b>Pre Test Information :</b></p>
+                    <span>No special preparation is required</span>
+                </div>
+                <div class="repo_delevery">
+                    <p><b>Report Delevry :</b></p>
+                    <span>42 hours</span>
+                </div>
+                <div class="price" >
+                    <h5 class="current" ><i class="fa-solid fa-indian-rupee-sign"></i> 299</h5>
+                    <h5 class="before" ><i class="fa-solid fa-indian-rupee-sign"></i> 400</h5>
+                </div>
+                <div class="buttons">
+                    <a href="#!" class="button" data-toggle="modal" data-target="#exampleModalCenter">View Details</a>
+                    <a href="#!" class="button" >Book now</a>
+                </div>
+                <p class="info"><i class='bx bx-home-alt'></i> Home Collection Available</p>
+            </div>
+        </div>
+    </section>
+
+
+   <section id="models" >
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <article class="card__content grid">
+                    <div class="card__pricing">
+                        <div class="card__pricing-number">
+                            <div class="price" style="flex-direction: column;" >
+                            <h5 class="current" style=" color:#fff;" ><i class="fa-solid fa-indian-rupee-sign"></i> 299</h5>
+                            <h5 class="before" style=" color:#fff;"><i class="fa-solid fa-indian-rupee-sign"></i> 400</h5>
+                            </div>
+                        </div>
+                        <!--<span class="card__pricing-month">/test</span>-->
+                    </div>
+
+                    <header class="card__header">
+                        <div class="card__header-circle ">
+                            <a href="#!" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                        </div>
+
+                        <span class="card__header-subtitle">Most popular</span>
+                        <h1 class="card__header-title">Blood Diagnosis</h1>
+                    </header>
+
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="display:flex;"><span><i class="fa-solid fa-flask"></i></span>
+                                    <p> Test Type</p>
+                                </td>
+                                <td>:</td>
+                                <td>Blood</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display:flex;"><span><i class="fas fa-info-circle"></i></span>
+                                        <p> Pre-test Information</p>
+                                    </div>
+                                </td>
+                                <td>:</td>
+                                <td>No special preparation is required</td>
+                            </tr>
+                            <tr>
+                                <td style="display:flex;"><span><i class="fa-solid fa-clock"></i></span>
+                                    <p> Report Delivery</p>
+                                </td>
+                                <td>:</td>
+                                <td>42 hours</td>
+                            </tr>
+                            <tr>
+                                <td style="display:flex;"><span><i class="fa-solid fa-indian-rupee-sign"
+                                            style="margin:0 5px;"></i></span>
+                                    <p> Price</p>
+                                </td>
+                                <td>:</td>
+                                <td><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span>300 </span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="#!" class="card__button">Book Appointment</a>
+                </article>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    </section>
+
+    <footer id="footer">
+        <div class="main">
+            <div class="left box">
+                <div class="heading">
+                    <h2>About us</h2>
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <ul class="socialLinks">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="middle box">
+                <div class="heading">
+                    <h2>Address</h2>
+                </div>
+                <div>
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Birendranagar, Surkhet</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+089-765432100</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <div class="heading">
+                    <h2>Quick links</h2>
+                </div>
+                <ul class="quickLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="far fa-copyright"></span><span> 2010-2021 HBC care All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- coustom js -->
+    <script src="main.js"></script>
+    <!-- services js -->
+    <script src="services.js"></script>
+</body>
+
+</html>
